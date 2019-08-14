@@ -4,7 +4,7 @@ require './invoice_decorator.rb'
 
 describe 'Delegator' do
 	#global test variables
-	let(:invoice) { Invoice.new("Kristen Huges") }
+	let(:invoice) { Invoice.new(name: "Kristen Huges", cost: 50) }
 	let(:decorated_invoice) { InvoiceDecorator.new(invoice) }
 
 	it 'can take an invoice as an argument and add functionality on top of the class' do
